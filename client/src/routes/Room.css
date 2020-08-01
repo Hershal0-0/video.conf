@@ -1,0 +1,179 @@
+.user_element{
+    display: flex;
+    flex-direction: column;
+    background-color: lavender;
+    padding: 0;
+    margin: 0;
+    height: min-content;
+    
+}
+
+body{
+  background-color: #ddfaaa;
+}
+
+.container{
+    padding: 20px;
+    display: flex;
+    width: 75%;
+    margin-left: 0;
+    
+    background-color: #ddfaaa;
+}
+
+.vid{
+    width: 400px;
+    
+    padding: 0;
+    margin: 0;
+}
+h3{
+    padding: 0;
+    margin: 0;
+    
+}
+
+.name{
+    margin-top: 15px;
+    margin-bottom: 15px;;
+}
+
+.chatbox{
+    width: 30%;
+    background-color: lavender;
+    height:70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.msgs{
+    background-color: #d4fcfb;
+    height: 700px;
+}
+
+.view{
+    display: flex;
+    flex-direction: row;
+}
+
+.myMessage{
+    display: flex;
+    justify-content: flex-end;
+  }
+  .myMessage button{
+    background-color: pink;
+    width: 7rem;
+    margin: 3px;
+    border: 0px solid black;
+    border-radius: 3px;
+    
+  }
+  .partnerMessage{
+    display: flex;
+    justify-content: flex-start;
+  }
+  .partnerMessage button{
+    background-color: rgba(57, 199, 235, 0.774);
+    width: 7rem;
+    margin: 3px;
+    border: 0px solid black;
+    border-radius: 3px;
+  }
+  
+  .entry{
+    display: flex;
+    flex-direction: column;
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+  
+  p{
+    color: white;
+    margin: 0px;
+    padding: 0px;
+  }
+
+
+
+
+
+  /* style.css */
+  @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h2 {
+  font-size: 50px;
+  font-family: sans-serif;
+  letter-spacing: 3px;
+  color: white;
+  font-family: Verdana;
+}
+
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: white;
+}
+.nav {
+  display: flex;
+  background: rgb(108, 108, 235);
+  height: 3.2rem;
+  align-items: center;
+  box-shadow: white;
+}
+.links {
+  width: 60%;
+  /* background-color: pink; */
+  margin-left: 7rem;
+}
+.links ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+}
+.links li {
+  margin: 0 1.3rem;
+}
+.icon p {
+  margin-left: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.title {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+}
+.text p {
+  font-size: 3rem;
+  font-family: "Ubuntu", sans-serif;
+}
+.btn {
+  text-align: center;
+  margin-top: 2rem;
+}
+.btnn {
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+  background: blue;
+  border: 2px solid black;
+  color: white;
+  transition: all 0.3s linear;
+  font-size: 20px;
+  margin-top: 60px;
+}
+.btnn:hover {
+  background: transparent;
+  color: blue;
+  /* border: 2px solid blue; */
+}
