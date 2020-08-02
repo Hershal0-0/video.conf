@@ -28,7 +28,7 @@ a {
 .nav {
   display: flex;
   background: rgb(108, 108, 235);
-  height: 3.2rem;
+  height: 4rem;
   align-items: center;
   box-shadow: white;
 }
@@ -79,4 +79,22 @@ a {
   background: transparent;
   color: blue;
   /* border: 2px solid blue; */
+}
+
+.signin{
+  margin-left: auto;
+
+}
+
+.small{
+  height: 50px;
+  width: 50px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin: 2px;;
+  
+}
+
+.btn-primary{
+  border-radius: 5px;;
 }

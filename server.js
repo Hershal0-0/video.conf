@@ -7,7 +7,7 @@ const socket = require("socket.io");
 const io = socket(server);
 
 const users = {};
-
+const user_details=[];
 const socketToRoom = {};
 
 io.on('connection', socket => {
@@ -18,7 +18,10 @@ io.on('connection', socket => {
     socket.on("send message",body=>{
         io.emit("new message",body)
     })
-
+    socket.on("user details",detail=>{
+        user_details.push(detail)
+        io.emit("all members",user_details)
+    })
 
     socket.on("join room", roomID => {
         if (users[roomID]) {

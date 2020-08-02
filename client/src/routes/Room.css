@@ -1,105 +1,130 @@
-.user_element{
-    display: flex;
-    flex-direction: column;
-    background-color: lavender;
-    padding: 0;
-    margin: 0;
-    height: min-content;
-    
+.user_element {
+  display: flex;
+  flex-direction: column;
+  background-color: lavender;
+  padding: 0;
+  margin: 0;
+  height: min-content;
 }
 
-body{
-  background-color: #ddfaaa;
+.container {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  width: 75%;
+  margin-left: 0;
+  flex-wrap: wrap;
+  background-color: grey;
+  height: 91.7vh;
 }
 
-.container{
-    padding: 20px;
-    display: flex;
-    width: 75%;
-    margin-left: 0;
-    
-    background-color: #ddfaaa;
+.vid {
+  width: 30rem;
+  /* border: 2px solid blue; */
+
+  padding: 0;
+  margin: 0;
+}
+h3 {
+  padding: 0;
+  margin: 0;
 }
 
-.vid{
-    width: 400px;
-    
-    padding: 0;
-    margin: 0;
-}
-h3{
-    padding: 0;
-    margin: 0;
-    
+.name {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 0.5rem;
+  border: 2px solid black;
 }
 
-.name{
-    margin-top: 15px;
-    margin-bottom: 15px;;
+.chatbox {
+  width: 30%;
+  background-color: lavender;
+  height: 91.7vh;
 }
 
-.chatbox{
-    width: 30%;
-    background-color: lavender;
-    height:70vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.view {
+  display: flex;
+  flex-direction: row;
 }
-
-.msgs{
-    background-color: #d4fcfb;
-    height: 700px;
+.text {
+  background-color: rgb(93, 93, 230);
+  text-align: center;
 }
-
-.view{
-    display: flex;
-    flex-direction: row;
+.bt {
+  margin-left: 0.2rem;
+  margin-top: 32rem;
+  margin-right: 0.2rem;
+  height: 2rem;
+  background-color: blue;
+  border-radius: 1rem;
+  border: none;
+}
+.btn-primary {
+  margin-left: 0.2rem;
+  /* margin-top: -50rem; */
+  margin-right: 0.2rem;
+  height: 2.5rem;
+  text-align: center;
+  text-decoration-color: white;
+  border: 1px solid turquoise;
+  border-radius: 5px;
+  
+  
+}
+.txta {
+  margin-left: 0.2rem;
+  margin-top: 32rem;
+  height: 2rem;
+  border-radius: 0.8rem;
+  border: 2px solid black;
+}
+form {
+  display: grid;
+  grid-template-columns: 1fr 6rem;
+  grid-gap: 1rem;
+}
+.switchh {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 0.5rem;
 }
 
 .myMessage{
-    display: flex;
-    justify-content: flex-end;
-  }
-  .myMessage button{
-    background-color: pink;
-    width: 7rem;
-    margin: 3px;
-    border: 0px solid black;
-    border-radius: 3px;
-    
-  }
-  .partnerMessage{
-    display: flex;
-    justify-content: flex-start;
-  }
-  .partnerMessage button{
-    background-color: rgba(57, 199, 235, 0.774);
-    width: 7rem;
-    margin: 3px;
-    border: 0px solid black;
-    border-radius: 3px;
-  }
+  display: flex;
+  justify-content: flex-end;
+}
+.myMessage button{
+  background-color: pink;
+  width: 7rem;
+  margin: 3px;
+  border: 0px solid black;
+  border-radius: 3px;
   
-  .entry{
-    display: flex;
-    flex-direction: column;
-    margin-left: 4px;
-    margin-right: 4px;
-  }
-  
-  p{
-    color: white;
-    margin: 0px;
-    padding: 0px;
-  }
+}
+.partnerMessage{
+  display: flex;
+  justify-content: flex-start;
+}
+.partnerMessage button{
+  background-color: rgba(57, 199, 235, 0.774);
+  width: 7rem;
+  margin: 3px;
+  border: 0px solid black;
+  border-radius: 3px;
+}
 
+.entry{
+  display: flex;
+  flex-direction: column;
+  margin-left: 4px;
+  margin-right: 4px;
+}
 
+/* style.css */
 
-
-
-  /* style.css */
-  @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -113,7 +138,11 @@ h2 {
   font-family: Verdana;
 }
 
-
+.main {
+  
+  height: 100vh;
+  background-size: cover;
+}
 li {
   list-style: none;
 }
@@ -125,7 +154,7 @@ a {
 .nav {
   display: flex;
   background: rgb(108, 108, 235);
-  height: 3.2rem;
+  height: 4rem;
   align-items: center;
   box-shadow: white;
 }
@@ -176,4 +205,31 @@ a {
   background: transparent;
   color: blue;
   /* border: 2px solid blue; */
+}
+
+.signin{
+  margin-left: auto;
+
+}
+
+.small{
+  height: 50px;
+  width: 50px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin: 2px;;
+  
+}
+
+.btn-primary{
+  border-radius: 5px;;
+}
+
+.roomid{
+  font-size: 36px;
+}
+
+.room_id_div{
+  
+
 }
